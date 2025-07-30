@@ -3,11 +3,11 @@ from pydantic import BaseModel
 from app.vectorstore import load_vectorstore
 from app.llm import get_qa_chain
 
-#Initialize FastAPI app and router
+# Initialize FastAPI app and router
 app = FastAPI()
 router = APIRouter()
 
-#Load vectorstore and initialize the QA chain
+# Load vectorstore and initialize the QA chain
 vectorstore = load_vectorstore()
 qa_chain = get_qa_chain(vectorstore)
 
@@ -63,5 +63,5 @@ def query_confluence(request: QueryRequest):
         print("Error during query processing:", e)
         return {"error": "Internal server error", "details": str(e)}
 
-#Include the router in the FastAPI application
+# Include the router in the FastAPI application
 app.include_router(router)
