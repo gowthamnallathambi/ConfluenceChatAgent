@@ -57,11 +57,4 @@ F --> G[Streamlit Chat UI]
 - Response: The chatbot answers the question and cites sources.
 
 ---
-
-
- 
-
-
-
-
-
+<img width="1425" height="804" alt="con_chatbot" src="https://github.com/user-attachments/assets/b890eb7b-53c8-442d-b242-b6dd0d15d891" />
