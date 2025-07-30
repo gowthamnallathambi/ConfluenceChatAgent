@@ -57,4 +57,6 @@ F --> G[Streamlit Chat UI]
 - Response: The chatbot answers the question and cites sources.
 
 ---
-<img width="1425" height="804" alt="con_chatbot" src="https://github.com/user-attachments/assets/b890eb7b-53c8-442d-b242-b6dd0d15d891" />
+## Confluence Chatbot 
+<img width="772" height="781" alt="chatbot" src="https://github.com/user-attachments/assets/365f119d-f400-4094-80a1-89e368d21e08" />
+
