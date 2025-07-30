@@ -1,4 +1,3 @@
-
 from app.parser import clean_html, extract_text_from_file
 from app.vectorstore import build_vectorstore_from_docs, save_vectorstore
 from atlassian import Confluence
@@ -18,7 +17,7 @@ def ingest_all():
         b. Retrieve and parse all file attachments for each page.
     4. Build and save the vector store using the combined page and attachment content.
     """
-    #Initialize Confluence client using environment credentials
+    # Initialize Confluence client using environment credentials
     confluence = Confluence(
         url=os.getenv("CONFLUENCE_BASE_URL"),
         username=os.getenv("CONFLUENCE_USERNAME"),
