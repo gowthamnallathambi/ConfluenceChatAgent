@@ -1,0 +1,24 @@
+[project]
+name = "confluence-rag"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "atlassian-python-api>=4.0.4",
+    "beautifulsoup4>=4.8.2",
+    "docx>=0.2.4",
+    "faiss-cpu>=1.11.0.post1",
+    "fastapi>=0.116.1",
+    "langchain>=0.3.27",
+    "langchain-community>=0.3.27",
+    "langchain-groq>=0.3.6",
+    "langchain-huggingface>=0.3.1",
+    "pypdf>=5.9.0",
+    "python-dotenv>=1.1.1",
+    "requests>=2.32.4",
+    "sentence-transformers>=5.0.0",
+    "streamlit>=1.47.1",
+    "textract==1.6.5",
+    "uvicorn>=0.35.0",
+]

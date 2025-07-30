@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+requests
+python-dotenv
+beautifulsoup4
+textract==1.6.5
+pypdf
+docx
+langchain
+langchain-community
+faiss-cpu
+sentence-transformers       
+langchain-groq
+atlassian-python-api
