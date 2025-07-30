@@ -6,7 +6,7 @@ from app.llm import get_qa_chain
 st.set_page_config(page_title="Confluence RAG", layout="centered")
 st.title("📘 Confluence Q&A Assistant")
 
-# 🔄 Load vectorstore and chain
+# Load vectorstore and chain
 @st.cache_resource
 def generate_vectorstore():
     """
@@ -22,16 +22,16 @@ def generate_vectorstore():
 
 qa_chain = generate_vectorstore()
 
-# 💬 Initialize chat history
+# Initialize chat history
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
-# 📜 Display chat history
+# Display chat history
 for msg in st.session_state.messages:
     with st.chat_message(msg["role"]):
         st.markdown(msg["content"])
 
-# 📝 Chat input
+# Chat input
 if user_input := st.chat_input("Ask a question from Confluence documents"):
     st.session_state.messages.append({"role": "user", "content": user_input})
     with st.chat_message("user"):
