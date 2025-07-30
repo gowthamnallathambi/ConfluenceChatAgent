@@ -45,5 +45,5 @@ if user_input := st.chat_input("Ask a question from Confluence documnets"):
                 st.markdown(formatted_response)
                 st.session_state.messages.append({"role": "assistant", "content": formatted_response})
     except Exception as e:
-        st.error(f"❌ Error: {e}")
+        st.error(f"Error: {e}")
 
