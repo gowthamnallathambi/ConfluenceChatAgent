@@ -12,3 +12,5 @@ faiss-cpu
 sentence-transformers       
 langchain-groq
 atlassian-python-api
+langchain-huggingface
+streamlit
